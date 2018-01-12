@@ -59,27 +59,27 @@ double BisecYTM(double FV, double c, double PV, double N, double d, double a, do
 	cout << "Enter Face Value (FV): ";
 	cin >> FV;
 
-    cout << "Enter Price of the Bond: ";
+	cout << "Enter Price of the Bond: ";
 	cin >> PV;
 
 	cout << "Enter the number of full years until maturity (N): ";
 	cin >> N; 
 	
 	if (c==0){
-   cout<<"This is a Zero coupon bond!"<<endl;
-   }
+	    cout<<"This is a Zero coupon bond!"<<endl;
+	   }
 
        if(d==0){
-    cout<<"Coupon payment day is today!"<<endl;
-   }
+	    cout<<"Coupon payment day is today!"<<endl;
+	   }
 
-      if (PV==FV){
-    cout<<"bond’s price is equal to its par (face) value!"<<endl;;
-  }
+       if (PV==FV){
+ 	   cout<<"bond’s price is equal to its par (face) value!"<<endl;;
+	  }
 
   
-            double a= 0.000001;
-            double b=10;
-            double YTM = BisecYTM(FV, c, PV, N, d, a, b);
-            cout << "YTM= " <<YTM<<""<<endl;
+       double a= 0.000001;
+       double b=10
+       double YTM = BisecYTM(FV, c, PV, N, d, a, b);
+       cout << "YTM= " <<YTM<<""<<endl;
         }
