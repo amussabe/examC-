@@ -79,7 +79,7 @@ double BisecYTM(double FV, double c, double PV, double N, double d, double a, do
 
   
        double a= 0.000001;
-       double b=10
+       double b=10;
        double YTM = BisecYTM(FV, c, PV, N, d, a, b);
        cout << "YTM= " <<YTM<<""<<endl;
         }
